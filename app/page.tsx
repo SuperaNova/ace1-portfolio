@@ -71,7 +71,7 @@ export default function Home() {
                         <p className="text-gray-600 text-sm mb-4 flex-grow">
                             {workflow.description}
                         </p>
-                        <a href="/WorflowPage" className="btn-primary-link w-full font-medium py-2.5 px-5 rounded-lg mt-auto">
+                        <a href="/WorkflowPage" className="btn-primary-link w-full font-medium py-2.5 px-5 rounded-lg mt-auto">
                             Launch Workflow
                         </a>
                     </div>
