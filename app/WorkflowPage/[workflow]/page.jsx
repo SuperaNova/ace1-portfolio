@@ -1,6 +1,8 @@
 'use client'
 import { useEffect, useState } from "react"
 import AIDataAnalystChatbot from "../../Components/AIDataAnalystChatbot"
+import ChatTriggeredAnswerSearch from "../../Components/ChatTriggeredAnswerSearch"
+import PepaMedicalClinic from "../../Components/PepaMedicalClinic"
 
 
 const page = ({params}) => {
@@ -9,11 +11,26 @@ const page = ({params}) => {
             name: "AI Data Analyst Chatbot",
             description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyze google sheet. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet",
             instruction: "The chatbot uses AI to answer questions about data analysis. It is trained on a dataset of data analysis questions and answers.",
-            image: "/workflow-images/AI Data Analyst Chatbot.png",
             notes: "",
             component: <AIDataAnalystChatbot />,
             link: "ai-data-analyst-chatbot"
-        }
+        },
+        {
+            name: "Chat-triggered Answer Search",
+            description: "search through documents, scrape websites and answer questions",
+            instruction: "search through documents, scrape websites and answer questions",
+            notes: "",
+            component: <ChatTriggeredAnswerSearch />,
+            link: "chat-triggered-answer-search"
+        },
+        {
+            name: "Pepa Medical Clinic",
+            description: "A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.",
+            instruction: "A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.",
+            notes: "",
+            component: <PepaMedicalClinic />,
+            link: "pepa-medical-clinic"
+        },
     ]
     
     const [site, setSite] = useState('')

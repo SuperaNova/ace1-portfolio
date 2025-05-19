@@ -17,10 +17,10 @@ export default function Home() {
                 link: 'WorkflowPage/chat-triggered-answer-search'
             },
             {
-                title: 'AI Data Analyst Chatbot',
-                description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyze google sheet. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
-                image: '/workflow-images/AI Data Analyst Chatbot.png',
-                link: 'WorkflowPage/ai-data-analyst-chatbot'
+                title: 'Pepa Medical Clinic',
+                description: 'A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.',
+                image: '/workflow-images/Pepa Medical Clinic.png',
+                link: 'WorkflowPage/pepa-medical-clinic'
             },
     ]
     
