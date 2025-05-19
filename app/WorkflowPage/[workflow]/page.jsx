@@ -1,8 +1,9 @@
 'use client'
-import AIDataAnalystChatbot from "../Components/AIDataAnalystChatbot"
+import { useEffect, useState } from "react"
+import AIDataAnalystChatbot from "../../Components/AIDataAnalystChatbot"
 
 
-const page = ({}) => {
+const page = ({params}) => {
     const workflow_info = [
         {
             name: "AI Data Analyst Chatbot",
@@ -11,16 +12,24 @@ const page = ({}) => {
             image: "/workflow-images/AI Data Analyst Chatbot.png",
             notes: "",
             component: <AIDataAnalystChatbot />,
+            link: "ai-data-analyst-chatbot"
         }
     ]
-
     
+    const [site, setSite] = useState('')
+    useEffect(() => {
+        const getWorkflow = async() =>{
+            const items = await params
+            setSite(items.workflow)
+        }
+        getWorkflow()
+    }, [])
 
     return (
         <div className='antialiased text-gray-800'>
             <header className="bg-white shadow-sm">
                 <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-                    <h1 id="workflowTitle" className="text-xl md:text-2xl font-bold text-indigo-700">Workflow Name</h1>
+                    <h1 id="workflowTitle" className="text-xl md:text-2xl font-bold text-indigo-700">{site}</h1>
                     <a href="/" className="text-sm text-indigo-600 hover:text-indigo-800 font-medium py-2 px-4 rounded-md border border-indigo-600 hover:bg-indigo-50 transition-colors duration-150">
                         &larr; Back to Portfolio
                     </a>
@@ -28,6 +37,7 @@ const page = ({}) => {
             </header>
 
             {workflow_info.map((workflow, index) => {
+                if(site === workflow.link)
                 return(<div className="content-wrapper container mx-auto px-6 py-8 md:py-12" key={index}>
                     {/* instructions */}
                     <section id="workflowInstructions" className="mb-8 p-6 bg-indigo-50 border border-indigo-200 rounded-lg shadow">

@@ -1,25 +1,27 @@
+import React from 'react';
+
 
 export default function Home() {
 
     const portfolioData = [
             {
-                title: 'Workflow Alpha: Data Processing',
-                description: 'An interactive demonstration of a complex data processing pipeline. Users can input sample data and see the transformation steps.',
-                image: 'https://placehold.co/600x400/E0E7FF/4338CA?text=Workflow+Alpha',
-                link: 'workflow-data-processing.html'
+                title: 'AI Data Analyst Chatbot',
+                description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyze google sheet. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
+                image: '/workflow-images/AI Data Analyst Chatbot.png',
+                link: 'WorkflowPage/ai-data-analyst-chatbot'
             },
             {
-                title: 'Workflow Beta: Machine Learning',
-                description: 'A machine learning workflow for image classification. Users can upload an image and see the predicted class.',
-                image: 'https://placehold.co/600x400/E0E7FF/4338CA?text=Workflow+Beta',
-                link: 'workflow-machine-learning.html'
+                title: 'Chat-triggered Answer Search',
+                description: 'search through documents, scrape websites and answer questions',
+                image: '/workflow-images/Chat-triggered Answer Search.png',
+                link: 'WorkflowPage/chat-triggered-answer-search'
             },
             {
-                title: 'Workflow Gamma: Natural Language Processing',
-                description: 'An NLP workflow for sentiment analysis. Users can input text and see the sentiment analysis results.',
-                image: 'https://placehold.co/600x400/E0E7FF/4338CA?text=Workflow+Gamma',
+                title: 'AI Data Analyst Chatbot',
+                description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyze google sheet. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
+                image: '/workflow-images/AI Data Analyst Chatbot.png',
+                link: 'WorkflowPage/ai-data-analyst-chatbot'
             },
-            
     ]
     
 
@@ -71,7 +73,7 @@ export default function Home() {
                         <p className="text-gray-600 text-sm mb-4 flex-grow">
                             {workflow.description}
                         </p>
-                        <a href="/WorkflowPage" className="btn-primary-link w-full font-medium py-2.5 px-5 rounded-lg mt-auto">
+                        <a href={workflow.link} className="btn-primary-link w-full font-medium py-2.5 px-5 rounded-lg mt-auto">
                             Launch Workflow
                         </a>
                     </div>
