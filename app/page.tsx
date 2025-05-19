@@ -89,8 +89,8 @@ export default function Home() {
                     <div className="max-w-3xl mx-auto text-center text-gray-700 text-lg">
                         <img src="https://placehold.co/150x150/E0E7FF/4338CA?text=Your+Photo" alt="Your Name" className="w-32 h-32 rounded-full mx-auto mb-6 shadow-md" />
                         <p className="mb-4">
-                            Hi, I'm [Your Name], a passionate [Your Profession/Title] specializing in creating efficient and engaging workflows. 
-                            This portfolio showcases some of my projects where users can directly interact with the processes I've designed.
+                            Hi, I am Your Name, a passionate Your Profession/Title specializing in creating efficient and engaging workflows. 
+                            This portfolio showcases some of my projects where users can directly interact with the processes I have designed.
                         </p>
                         <p>
                             I believe in making complex systems understandable and accessible through interactive experiences. Feel free to explore and reach out!
