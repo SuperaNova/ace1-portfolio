@@ -3,8 +3,9 @@ import { useEffect, useState } from "react"
 import AIDataAnalystChatbot from "../../Components/AIDataAnalystChatbot"
 import ChatTriggeredAnswerSearch from "../../Components/ChatTriggeredAnswerSearch"
 import PepaMedicalClinic from "../../Components/PepaMedicalClinic"
-import PersonalAssistant from "../../Components/PersonalAssistant"
-
+import EventKnowledgeBasedAI from "../../Components/EventKnowledgeBasedAI"
+import AutomatedInterviewSchedulingGoogleCalendarChatBot from "../../Components/AutomatedInterviewSchedulingGoogleCalendarChatBot"
+import Helpdesk from "../../Components/Helpdesk"
 
 
 const page = ({params}) => {
@@ -34,12 +35,28 @@ const page = ({params}) => {
             link: "pepa-medical-clinic"
         },
         {
-            name: "Personal Assistant",
-            description: "A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.",
-            instruction: "A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.",
+            name: "Event Knowledge based AI",
+            description: "telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature",
+            instruction: "telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature",
             notes: "",
-            component: <PersonalAssistant />,
-            link: "personal-assistant"
+            component: <EventKnowledgeBasedAI />,
+            link: "event-knowledge-based-ai"
+        },
+        {
+            name: "Automated Interview Scheduling Google Calendar Chat Bot",
+            description: "this workflow uses chat as trigger. It connects with google calendar to get availability during the week and setting of events",
+            instruction: "this workflow uses chat as trigger. It connects with google calendar to get availability during the week and setting of events",
+            notes: "",
+            component: <AutomatedInterviewSchedulingGoogleCalendarChatBot />,
+            link: "automated-interview-scheduling-google-calendar-chat-bot"
+        },
+        {
+            name: "Helpdesk",
+            description: "this workflow uses chat as trigger to handle inquiries and tickets",
+            instruction: "this workflow uses chat as trigger to handle inquiries and tickets",
+            notes: "",
+            component: <Helpdesk />,
+            link: "helpdesk"
         },
     ]
     

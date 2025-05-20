@@ -6,7 +6,7 @@ import '@n8n/chat/style.css';
 import { Button } from "@/components/ui/button"
 import { Paperclip } from 'lucide-react';
 
-const aidataanalystchatbot = () => {
+const ChatTriggeredAnswerSearch = () => {
     useEffect(() => {
 		createChat({
 			webhookUrl: 'https://dsva.app.n8n.cloud/webhook/09a9c2c6-f66a-4f40-8ddf-2669e55d7a3b/chat',
@@ -42,4 +42,4 @@ const aidataanalystchatbot = () => {
     )
 }
 
-export default aidataanalystchatbot
+export default ChatTriggeredAnswerSearch

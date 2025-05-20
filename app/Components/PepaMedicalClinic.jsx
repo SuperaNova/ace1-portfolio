@@ -9,7 +9,7 @@ import { PhoneCall } from 'lucide-react';
 const vapi = new Vapi("2aa90ffb-0f56-42af-8305-7071bd76960c");
 
 
-const aidataanalystchatbot = () => {
+const PepaMedicalClinic = () => {
     const [isRecording, setIsRecording] = React.useState(false);
 
     const startCall = () =>{
@@ -33,4 +33,4 @@ const aidataanalystchatbot = () => {
     )
  }
 
-export default aidataanalystchatbot
+export default PepaMedicalClinic

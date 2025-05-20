@@ -28,6 +28,24 @@ export default function Home() {
                 image: '/workflow-images/personal-assistant.png',
                 link: 'https://evo-personal-assistant.vercel.app/'
             },
+            {
+                title: 'Event Knowledge Based AI',
+                description: 'telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature',
+                image: '/workflow-images/Event Knowledge Based AI.png',
+                link: 'WorkflowPage/event-knowledge-based-ai'
+            },
+            {
+                title: 'Automated Interview Scheduling Google Calendar Chat Bot',
+                description: 'this workflow uses chat as trigger. It connects with google calendar to get availability during the week and setting of events',
+                image: '/workflow-images/Automated Interview Scheduling Google Calendar Chat Bot.png',
+                link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
+            },
+            {
+                title: 'Helpdesk',
+                description: 'this workflow uses chat as trigger to handle inquiries and tickets',
+                image: '/workflow-images/Helpdesk.png',
+                link: 'WorkflowPage/helpdesk'
+            },
     ]
     
 
