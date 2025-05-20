@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import AIDataAnalystChatbot from "../../Components/AIDataAnalystChatbot"
 import ChatTriggeredAnswerSearch from "../../Components/ChatTriggeredAnswerSearch"
 import PepaMedicalClinic from "../../Components/PepaMedicalClinic"
+import PersonalAssistant from "../../Components/PersonalAssistant"
+
 
 
 const page = ({params}) => {
@@ -30,6 +32,14 @@ const page = ({params}) => {
             notes: "",
             component: <PepaMedicalClinic />,
             link: "pepa-medical-clinic"
+        },
+        {
+            name: "Personal Assistant",
+            description: "A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.",
+            instruction: "A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.",
+            notes: "",
+            component: <PersonalAssistant />,
+            link: "personal-assistant"
         },
     ]
     

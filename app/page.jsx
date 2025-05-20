@@ -22,6 +22,12 @@ export default function Home() {
                 image: '/workflow-images/Pepa Medical Clinic.png',
                 link: 'WorkflowPage/pepa-medical-clinic'
             },
+            {
+                title: 'Personal Assistant',
+                description: 'A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.',
+                image: '/workflow-images/personal-assistant.png',
+                link: 'https://evo-personal-assistant.vercel.app/'
+            },
     ]
     
 
