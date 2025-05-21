@@ -11,36 +11,36 @@ import Helpdesk from "../../Components/Helpdesk"
 const page = ({params}) => {
     const workflow_info = [
         {
-            name: "AI Data Analyst Chatbot",
-            description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyze google sheet. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet",
-            instruction: "The chatbot uses AI to answer questions about data analysis. It is trained on a dataset of data analysis questions and answers.",
+            name: "Data Analyst Agent",
+            description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet",
+            instruction: "",
             notes: "<h4>Try asking it these questions:</h4><u><li>How many refunds in January and what was the amount refunded?</li><li>How many successful sales did we have in January 2025 and what was the final income of those?</li><li>What is the most frequent reason for refunds?</li></u>",
             component: <AIDataAnalystChatbot />,
-            link: "ai-data-analyst-chatbot"
+            link: "data-analyst-agent"
         },
         {
-            name: "Chat-triggered Answer Search",
-            description: "Search through documents, scrape websites and answer questions",
-            instruction: "Search through documents, scrape websites and answer questions",
+            name: `'Ask Me' AI Agent`,
+            description: "A chatbot that uses AI to search through documents, scrape websites and answer questions. This is very useful to find answers related to company policies, procedures, work instructions, or any other related use cases.",
+            instruction: "",
             notes: "<u><li>You can add a file link or a website link by clicking on the Add File Link button</li><li>Ask questions about the any url on the table</li></u>",
             component: <ChatTriggeredAnswerSearch />,
-            link: "chat-triggered-answer-search"
+            link: "ask-me-ai-agent"
         },
+        // {
+        //     name: "Pepa Medical Clinic",
+        //     description: "A medical clinic automation that can handle setting appointments.",
+        //     instruction: "A medical clinic automation that can handle setting appointments.",
+        //     notes: "<u><li>Click on the microphone image to start talking with ai</li></u>",
+        //     component: <PepaMedicalClinic />,
+        //     link: "pepa-medical-clinic"
+        // },
         {
-            name: "Pepa Medical Clinic",
-            description: "A medical clinic automation that can handle setting appointments.",
-            instruction: "A medical clinic automation that can handle setting appointments.",
-            notes: "<u><li>Click on the microphone image to start talking with ai</li></u>",
-            component: <PepaMedicalClinic />,
-            link: "pepa-medical-clinic"
-        },
-        {
-            name: "Event Knowledge based AI",
-            description: "Telegram bot for TechFuture Summit 2025 event. It has knowledgebase to answer questions through telegram. It has a broadcast feature for admin using chat bot that sends messages to users that has interacted with the bot. And a schedule message feature. ",
-            instruction: "Telegram bot that analyzes questions and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature",
+            name: "Event AI Agent",
+            description: "An AI agent that answers questions about an event. Questions such as: event time, location, guests, parking, food, etc.",
+            instruction: "",
             notes: `<u><li>Send message through this Bot Link: <a href="https://t.me/sssssssssssssun_bot">https://t.me/sssssssssssssun_bot</a></li><li></li></u>`,
             component: <EventKnowledgeBasedAI />,
-            link: "event-knowledge-based-ai"
+            link: "event-ai-agent"
         },
         {
             name: "Automated Interview Scheduling Google Calendar Chat Bot",
@@ -51,9 +51,9 @@ const page = ({params}) => {
             link: "automated-interview-scheduling-google-calendar-chat-bot"
         },
         {
-            name: "Helpdesk",
-            description: "This workflow uses chat as trigger to handle inquiries and tickets",
-            instruction: "This workflow uses chat as trigger to handle inquiries and tickets",
+            name: "Customer Service AI Agent (Helpdesk)",
+            description: "An AI Agent that answers inquiries about a product, pricing, etc. It allows users/clients to raise an issue. The agent will try to give instructions on how to fix an issue. This AI is integrated with Helpdesk system where issues will be raises for 2nd level support",
+            instruction: "",
             notes: "",
             component: <Helpdesk />,
             link: "helpdesk"
