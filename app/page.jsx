@@ -15,7 +15,7 @@ export default function Home() {
             },
             {
                 title: 'Chat-triggered Answer Search',
-                description: 'search through documents, scrape websites and answer questions',
+                description: 'Search through documents, scrape websites and answer questions',
                 image: '/workflow-images/Chat-triggered Answer Search.png',
                 link: 'WorkflowPage/chat-triggered-answer-search'
             },
@@ -33,19 +33,19 @@ export default function Home() {
             },
             {
                 title: 'Event Knowledge Based AI',
-                description: 'telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature',
+                description: 'Telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature',
                 image: '/workflow-images/Event Knowledge Based AI.png',
                 link: 'WorkflowPage/event-knowledge-based-ai'
             },
             {
                 title: 'Automated Interview Scheduling Google Calendar Chat Bot',
-                description: 'this workflow uses chat as trigger. It connects with google calendar to get availability during the week and setting of events',
+                description: 'This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation  of events',
                 image: '/workflow-images/Automated Interview Scheduling Google Calendar Chat Bot.png',
                 link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
             },
             {
                 title: 'Helpdesk',
-                description: 'this workflow uses chat as trigger to handle inquiries and tickets',
+                description: 'This workflow uses chat as trigger to handle inquiries and tickets',
                 image: '/workflow-images/Helpdesk.png',
                 link: 'WorkflowPage/helpdesk'
             },
@@ -62,7 +62,7 @@ export default function Home() {
             <section id="workflows" className="py-16 md:py-24 bg-gray-50">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 md:mb-16">
-                        My Interactive Workflows
+                        Interactive Workflows
                     </h2>
             {/* Workflow Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12" >

@@ -13,7 +13,7 @@ const Helpdesk = () => {
             initialMessages: [
                 'Hi there! 👋',
             ],
-            target: '#n8n-hdelpdesk',
+            target: '#n8n-helpdesk',
             i18n: {
                 en: {
                     title: '',

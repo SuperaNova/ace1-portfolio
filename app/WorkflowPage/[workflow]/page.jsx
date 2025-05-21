@@ -14,46 +14,46 @@ const page = ({params}) => {
             name: "AI Data Analyst Chatbot",
             description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyze google sheet. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet",
             instruction: "The chatbot uses AI to answer questions about data analysis. It is trained on a dataset of data analysis questions and answers.",
-            notes: "",
+            notes: "<h4>Try asking it these questions:</h4><u><li>How many refunds in January and what was the amount refunded?</li><li>How many successful sales did we have in January 2025 and what was the final income of those?</li><li>What is the most frequent reason for refunds?</li></u>",
             component: <AIDataAnalystChatbot />,
             link: "ai-data-analyst-chatbot"
         },
         {
             name: "Chat-triggered Answer Search",
-            description: "search through documents, scrape websites and answer questions",
-            instruction: "search through documents, scrape websites and answer questions",
-            notes: "",
+            description: "Search through documents, scrape websites and answer questions",
+            instruction: "Search through documents, scrape websites and answer questions",
+            notes: "<u><li>You can add a file link or a website link by clicking on the Add File Link button</li><li>Ask questions about the any url on the table</li></u>",
             component: <ChatTriggeredAnswerSearch />,
             link: "chat-triggered-answer-search"
         },
         {
             name: "Pepa Medical Clinic",
-            description: "A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.",
-            instruction: "A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.",
-            notes: "",
+            description: "A medical clinic automation that can handle setting appointments.",
+            instruction: "A medical clinic automation that can handle setting appointments.",
+            notes: "<u><li>Click on the microphone image to start talking with ai</li></u>",
             component: <PepaMedicalClinic />,
             link: "pepa-medical-clinic"
         },
         {
             name: "Event Knowledge based AI",
-            description: "telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature",
-            instruction: "telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature",
-            notes: "",
+            description: "Telegram bot for TechFuture Summit 2025 event. It has knowledgebase to answer questions through telegram. It has a broadcast feature for admin using chat bot that sends messages to users that has interacted with the bot. And a schedule message feature. ",
+            instruction: "Telegram bot that analyzes questions and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature",
+            notes: `<u><li>Send message through this Bot Link: <a href="https://t.me/sssssssssssssun_bot">https://t.me/sssssssssssssun_bot</a></li><li></li></u>`,
             component: <EventKnowledgeBasedAI />,
             link: "event-knowledge-based-ai"
         },
         {
             name: "Automated Interview Scheduling Google Calendar Chat Bot",
-            description: "this workflow uses chat as trigger. It connects with google calendar to get availability during the week and setting of events",
-            instruction: "this workflow uses chat as trigger. It connects with google calendar to get availability during the week and setting of events",
-            notes: "",
+            description: "This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation of events",
+            instruction: "This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation of events",
+            notes: `<p>Required Inputs: </p><o><li>Phonenumber</li><li>Date & Time</li><li>Email</li></o>`,
             component: <AutomatedInterviewSchedulingGoogleCalendarChatBot />,
             link: "automated-interview-scheduling-google-calendar-chat-bot"
         },
         {
             name: "Helpdesk",
-            description: "this workflow uses chat as trigger to handle inquiries and tickets",
-            instruction: "this workflow uses chat as trigger to handle inquiries and tickets",
+            description: "This workflow uses chat as trigger to handle inquiries and tickets",
+            instruction: "This workflow uses chat as trigger to handle inquiries and tickets",
             notes: "",
             component: <Helpdesk />,
             link: "helpdesk"
@@ -107,12 +107,7 @@ const page = ({params}) => {
                     {/* Notes and Considetions */}
                     <section id="workflowNotes" className="mb-8 text-sm text-gray-600">
                         <h3 className="font-semibold text-gray-700 mb-2">Notes & Considerations:</h3>
-                        <h4>Try asking it these questions:</h4>
-                        <u>
-                            <li>- How many refunds in January and what was the amount refunded?</li>
-                            <li>- How many successful sales did we have in January 2025 and what was the final income of those?</li>
-                            <li>- What is the most frequent reason for refunds?</li>
-                        </u>
+                        <div dangerouslySetInnerHTML={{ __html: workflow.notes }} />
                     </section>
 
 
