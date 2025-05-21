@@ -8,7 +8,7 @@ const AboutSection = () => {
                 <div className="max-w-3xl mx-auto text-center text-gray-700 text-lg">
                     <img src="https://ace1it.com/images/logoFooter.png" alt="Your Name" className="w-32 h-32 rounded-full mx-auto mb-6 shadow-md" />
                     <p className="mb-4">
-                        Hi, This is ACE1, a passionate service provider specializing in creating efficient and engaging workflows. 
+                        Hi, This is ACE-1, a passionate service provider specializing in creating efficient and engaging workflows. 
                         This portfolio showcases some of the projects where users can directly interact with the processes we have designed.
                     </p>
                     <p>
