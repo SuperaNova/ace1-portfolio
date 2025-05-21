@@ -10,7 +10,7 @@ export default function Home() {
             {
                 title: 'Data Analyst Agent',
                 description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
-                image: '/images-worflow-background/Data Analyst Agent.png',
+                image: '/images-worflow-background/data-analyst.jpg',
                 link: 'WorkflowPage/ai-data-analyst-chatbot'
             },
             {
