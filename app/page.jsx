@@ -10,13 +10,13 @@ export default function Home() {
             {
                 title: 'Data Analyst Agent',
                 description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
-                image: '/workflow-images/AI Data Analyst Chatbot.png',
+                image: '/images-worflow-background/Data Analyst Agent.png',
                 link: 'WorkflowPage/ai-data-analyst-chatbot'
             },
             {
-                title: 'Chat-triggered Answer Search',
+                title: `'Ask Me' AI Agent`,
                 description: 'A chatbot that uses AI to search through documents, scrape websites and answer questions. This is very useful to find answers related to company policies, procedures, work instructions, or any other related use cases.',
-                image: '/workflow-images/Chat-triggered Answer Search.png',
+                image: '/images-worflow-background/Ask Me AI Agent.jpg',
                 link: 'WorkflowPage/chat-triggered-answer-search'
             },
             // {
@@ -28,25 +28,25 @@ export default function Home() {
             {
                 title: 'Personal Assistant',
                 description: 'A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.',
-                image: '/workflow-images/personal-assistant.png',
+                image: '/images-worflow-background/Personal Assistant.jpg',
                 link: 'https://evo-personal-assistant.vercel.app/'
             },
             {
                 title: 'Event AI Agent',
                 description: 'An AI agent that answers questions about an event. Questions such as: event time, location, guests, parking, food, etc.',
-                image: '/workflow-images/Event Knowledge Based AI.png',
+                image: '/images-worflow-background/Event AI Agent.jpg',
                 link: 'WorkflowPage/event-knowledge-based-ai'
             },
             {
                 title: 'Automated Interview Scheduling Google Calendar Chat Bot',
                 description: 'This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation  of events',
-                image: '/workflow-images/Automated Interview Scheduling Google Calendar Chat Bot.png',
+                image: '/images-worflow-background/Automated Interview Scheduling Google Calendar Chat Bot.jpg',
                 link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
             },
             {
                 title: 'Customer Service AI Agent (Helpdesk)',
                 description: 'An AI Agent that answers inquiries about a product, pricing, etc. It allows users/clients to raise an issue. The agent will try to give instructions on how to fix an issue. This AI is integrated with Helpdesk system where issues will be raises for 2nd level support',
-                image: '/workflow-images/Helpdesk.png',
+                image: '/images-worflow-background/Customer Service.jpg',
                 link: 'WorkflowPage/helpdesk'
             },
     ]
