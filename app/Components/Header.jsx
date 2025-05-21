@@ -6,7 +6,7 @@ const Header = () => {
             <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
                 <div className='flex items-center gap-6'>
                     <img src="https://ace1it.com/images/logoFooter.png" alt="" className="" />
-                    <a href="#home" className="text-2xl font-bold text-gray-800">Ace-1 IT Solutions</a>
+                    {/* <a href="#home" className="text-2xl font-bold text-gray-800">Ace-1 IT Solutions</a> */}
                 </div>
                 <div className="space-x-4">
                     <a href="#home" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>

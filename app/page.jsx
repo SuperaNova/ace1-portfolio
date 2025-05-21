@@ -8,23 +8,23 @@ export default function Home() {
 
     const portfolioData = [
             {
-                title: 'AI Data Analyst Chatbot',
-                description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyze google sheet. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
+                title: 'Data Analyst Agent',
+                description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
                 image: '/workflow-images/AI Data Analyst Chatbot.png',
                 link: 'WorkflowPage/ai-data-analyst-chatbot'
             },
             {
                 title: 'Chat-triggered Answer Search',
-                description: 'Search through documents, scrape websites and answer questions',
+                description: 'A chatbot that uses AI to search through documents, scrape websites and answer questions. This is very useful to find answers related to company policies, procedures, work instructions, or any other related use cases.',
                 image: '/workflow-images/Chat-triggered Answer Search.png',
                 link: 'WorkflowPage/chat-triggered-answer-search'
             },
-            {
-                title: 'Pepa Medical Clinic',
-                description: 'A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.',
-                image: '/workflow-images/Pepa Medical Clinic.png',
-                link: 'WorkflowPage/pepa-medical-clinic'
-            },
+            // {
+            //     title: 'Pepa Medical Clinic',
+            //     description: 'A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.',
+            //     image: '/workflow-images/Pepa Medical Clinic.png',
+            //     link: 'WorkflowPage/pepa-medical-clinic'
+            // },
             {
                 title: 'Personal Assistant',
                 description: 'A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.',
@@ -32,8 +32,8 @@ export default function Home() {
                 link: 'https://evo-personal-assistant.vercel.app/'
             },
             {
-                title: 'Event Knowledge Based AI',
-                description: 'Telegram bot that analyzes and answers questions. It has a broadcast feature that sends messages to users that has interacted with the bot. And a schedule message feature',
+                title: 'Event AI Agent',
+                description: 'An AI agent that answers questions about an event. Questions such as: event time, location, guests, parking, food, etc.',
                 image: '/workflow-images/Event Knowledge Based AI.png',
                 link: 'WorkflowPage/event-knowledge-based-ai'
             },
@@ -44,8 +44,8 @@ export default function Home() {
                 link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
             },
             {
-                title: 'Helpdesk',
-                description: 'This workflow uses chat as trigger to handle inquiries and tickets',
+                title: 'Customer Service AI Agent (Helpdesk)',
+                description: 'An AI Agent that answers inquiries about a product, pricing, etc. It allows users/clients to raise an issue. The agent will try to give instructions on how to fix an issue. This AI is integrated with Helpdesk system where issues will be raises for 2nd level support',
                 image: '/workflow-images/Helpdesk.png',
                 link: 'WorkflowPage/helpdesk'
             },
@@ -62,7 +62,7 @@ export default function Home() {
             <section id="workflows" className="py-16 md:py-24 bg-gray-50">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 md:mb-16">
-                        Interactive Workflows
+                        AI Automation
                     </h2>
             {/* Workflow Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12" >
