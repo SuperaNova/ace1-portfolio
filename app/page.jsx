@@ -8,8 +8,21 @@ export default function Home() {
 
     const portfolioData = [
             {
+                title: 'Customer Service AI Agent (Helpdesk)',
+                description: 'An AI Agent that answers inquiries about a product, pricing, etc. It allows users/clients to raise an issue. The agent will try to give instructions on how to fix an issue. This AI is integrated with Helpdesk system where issues will be raises for 2nd level support',
+                image: '/images-worflow-background/Customer Service.jpg',
+                link: 'WorkflowPage/helpdesk'
+            },
+            {
+                title: 'Event AI Agent',
+                description: 'An AI agent that answers questions about an event. Questions such as: event time, location, guests, parking, food, etc.',
+                image: '/images-worflow-background/Event AI Agent.jpg',
+                link: 'WorkflowPage/event-ai-agent'
+            },
+
+            {
                 title: 'Data Analyst Agent',
-                description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet',
+                description: 'A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source. ',
                 image: '/images-worflow-background/data-analyst.jpg',
                 link: 'WorkflowPage/data-analyst-agent'
             },
@@ -18,6 +31,12 @@ export default function Home() {
                 description: 'A chatbot that uses AI to search through documents, scrape websites and answer questions. This is very useful to find answers related to company policies, procedures, work instructions, or any other related use cases.',
                 image: '/images-worflow-background/Ask Me AI Agent.jpg',
                 link: 'WorkflowPage/ask-me-ai-agent'
+            },
+            {
+                title: 'Automated Interview Scheduling Google Calendar Chat Bot',
+                description: 'This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation  of events',
+                image: '/images-worflow-background/Automated Interview Scheduling Google Calendar Chat Bot.jpg',
+                link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
             },
             // {
             //     title: 'Pepa Medical Clinic',
@@ -31,24 +50,9 @@ export default function Home() {
                 image: '/images-worflow-background/Personal Assistant.jpg',
                 link: 'https://evo-personal-assistant.vercel.app/'
             },
-            {
-                title: 'Event AI Agent',
-                description: 'An AI agent that answers questions about an event. Questions such as: event time, location, guests, parking, food, etc.',
-                image: '/images-worflow-background/Event AI Agent.jpg',
-                link: 'WorkflowPage/event-ai-agent'
-            },
-            {
-                title: 'Automated Interview Scheduling Google Calendar Chat Bot',
-                description: 'This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation  of events',
-                image: '/images-worflow-background/Automated Interview Scheduling Google Calendar Chat Bot.jpg',
-                link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
-            },
-            {
-                title: 'Customer Service AI Agent (Helpdesk)',
-                description: 'An AI Agent that answers inquiries about a product, pricing, etc. It allows users/clients to raise an issue. The agent will try to give instructions on how to fix an issue. This AI is integrated with Helpdesk system where issues will be raises for 2nd level support',
-                image: '/images-worflow-background/Customer Service.jpg',
-                link: 'WorkflowPage/helpdesk'
-            },
+            
+            
+            
     ]
     
 

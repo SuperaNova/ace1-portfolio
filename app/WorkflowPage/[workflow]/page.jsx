@@ -12,7 +12,7 @@ const page = ({params}) => {
     const workflow_info = [
         {
             name: "Data Analyst Agent",
-            description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source. It triggers with a chat and and give answer from what it analyzed. It use a calculator node which calculates the numbers in the google sheet",
+            description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source",
             instruction: "",
             notes: "<h4>Try asking it these questions:</h4><u><li>How many refunds in January and what was the amount refunded?</li><li>How many successful sales did we have in January 2025 and what was the final income of those?</li><li>What is the most frequent reason for refunds?</li></u>",
             component: <AIDataAnalystChatbot />,
@@ -38,7 +38,7 @@ const page = ({params}) => {
             name: "Event AI Agent",
             description: "An AI agent that answers questions about an event. Questions such as: event time, location, guests, parking, food, etc.",
             instruction: "",
-            notes: `<u><li>Send message through this Bot Link: <a href="https://t.me/sssssssssssssun_bot">https://t.me/sssssssssssssun_bot</a></li><li></li></u>`,
+            notes: `<u><li>Send message through this Bot Link: <a href="https://t.me/sssssssssssssun_bot">https://t.me/sssssssssssssun_bot</a></li><li>What is the event all about?</li><li>What is the event schedule?</li><li>Are there any giveaways?</li><li>Where can I park?</li></u>`,
             component: <EventKnowledgeBasedAI />,
             link: "event-ai-agent"
         },
@@ -46,7 +46,7 @@ const page = ({params}) => {
             name: "Automated Interview Scheduling Google Calendar Chat Bot",
             description: "This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation of events",
             instruction: "This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation of events",
-            notes: `<p>Required Inputs: </p><o><li>Phonenumber</li><li>Date & Time</li><li>Email</li></o>`,
+            notes: `<p>Required Inputs: </p><o><li>Phonenumber</li><li>Date & Time</li><li>Email</li><p>Try asking, Id like to have an interview on Thursday</p></o>`,
             component: <AutomatedInterviewSchedulingGoogleCalendarChatBot />,
             link: "automated-interview-scheduling-google-calendar-chat-bot"
         },
@@ -54,7 +54,7 @@ const page = ({params}) => {
             name: "Customer Service AI Agent (Helpdesk)",
             description: "An AI Agent that answers inquiries about a product, pricing, etc. It allows users/clients to raise an issue. The agent will try to give instructions on how to fix an issue. This AI is integrated with Helpdesk system where issues will be raises for 2nd level support",
             instruction: "",
-            notes: "",
+            notes: "<h4>Try asking it these questions:</h4><u><li>What are Ace1 Services?</li><li>What are Ace1 Solutions and Architects?</li><li>How to setup Email on Android</li><li>Can you connect me with the support team, I cant setup email on my android phone</li></u>",
             component: <Helpdesk />,
             link: "helpdesk"
         },
