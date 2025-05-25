@@ -8,6 +8,13 @@ export default function Home() {
 
     const portfolioData = [
             {
+                title: 'AI Voice Assistant',
+                description: 'An interactive AI voice assistant that engages in conversation and provides information in real-time using the Vapi.ai platform.',
+                image: '/images-worflow-background/Personal Assistant.jpg',
+                link: 'WorkflowPage/vapi-assistant',
+                isVapi: true
+            },
+            {
                 title: 'Customer Service AI Agent (Helpdesk)',
                 description: 'An AI Agent that answers inquiries about a product, pricing, etc. It allows users/clients to raise an issue. The agent will try to give instructions on how to fix an issue. This AI is integrated with Helpdesk system where issues will be raises for 2nd level support',
                 image: '/images-worflow-background/Customer Service.jpg',
@@ -33,30 +40,17 @@ export default function Home() {
                 link: 'WorkflowPage/ask-me-ai-agent'
             },
             {
-                title: 'Automated Interview Scheduling Google Calendar Chat Bot',
-                description: 'This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation  of events',
-                image: '/images-worflow-background/Automated Interview Scheduling Google Calendar Chat Bot.jpg',
-                link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
-            },
-            // {
-            //     title: 'Pepa Medical Clinic',
-            //     description: 'A medical clinic automation system using Vapi, Make, and Airtable for handling appointments.',
-            //     image: '/workflow-images/Pepa Medical Clinic.png',
-            //     link: 'WorkflowPage/pepa-medical-clinic'
-            // },
-            {
                 title: 'Personal Assistant',
                 description: 'A chat bot and voice personal assistant that can perform various tasks such as scheduling appointments, sending messages, and more.',
                 image: '/images-worflow-background/Personal Assistant.jpg',
                 link: 'https://evo-personal-assistant.vercel.app/'
             },
             {
-                title: 'AI Voice Assistant',
-                description: 'An interactive AI voice assistant that engages in conversation and provides information in real-time using the Vapi.ai platform.',
-                image: '/images-worflow-background/Personal Assistant.jpg',
-                link: 'WorkflowPage/vapi-assistant',
-                isVapi: true
-            }
+                title: 'Automated Interview Scheduling Google Calendar Chat Bot',
+                description: 'This workflow uses chat as trigger. It connects with google calendar to get availability during the week and creation  of events',
+                image: '/images-worflow-background/Automated Interview Scheduling Google Calendar Chat Bot.jpg',
+                link: 'WorkflowPage/automated-interview-scheduling-google-calendar-chat-bot'
+            },
     ]
     
 
