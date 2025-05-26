@@ -70,7 +70,8 @@ const VapiAssistant = () => {
         <div className="flex flex-col items-center justify-center p-8 bg-white rounded-b-lg">
             <div className="max-w-lg mx-auto text-center">
                 <p className="mb-8 text-gray-700">
-                An interactive AI voice assistant that engages in conversation and helps the user to schedule an appointment for a restaurant.
+                    This AI voice assistant uses Vapi.ai technology to engage in natural conversation.
+                    Click the button below to start or end your call.
                 </p>
                 
                 <button

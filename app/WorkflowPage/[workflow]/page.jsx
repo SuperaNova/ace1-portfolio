@@ -12,16 +12,8 @@ import VapiAssistant from "../../Components/VapiAssistant"
 const page = ({params}) => {
     const workflow_info = [
         {
-            name: "AI Voice Assistant",
-            description: "An interactive AI voice assistant that engages in conversation and provides information in real-time using the Vapi.ai platform.",
-            instruction: "",
-            notes: "<h4>How to use:</h4><u><li>Click the 'Start Call' button to begin speaking with the AI assistant</li><li>Speak clearly into your microphone</li><li>Click 'End Call' when you're finished</li></u>",
-            component: <VapiAssistant />,
-            link: "vapi-assistant"
-        },
-        {
             name: "Data Analyst Agent",
-            description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, status of the transactions or the products, what payment method, transaction in a range of date from a data source",
+            description: "A chatbot that uses AI to answer questions about data analysis. This workflow analyzes sales, refunds, etc. from a data source",
             instruction: "",
             notes: "<h4>Try asking it these questions:</h4><u><li>How many refunds in January and what was the amount refunded?</li><li>How many successful sales did we have in January 2025 and what was the final income of those?</li><li>What is the most frequent reason for refunds?</li></u>",
             component: <AIDataAnalystChatbot />,
@@ -31,15 +23,23 @@ const page = ({params}) => {
             name: `'Ask Me' AI Agent`,
             description: "A chatbot that uses AI to search through documents, scrape websites and answer questions. This is very useful to find answers related to company policies, procedures, work instructions, or any other related use cases.",
             instruction: "",
-            notes: `<u><li>You can add a file link or a website link by clicking on the Add File Link button</li></u><b>You can ask questions like:</b><o><li>Why ACE-1 IT Solutions?</li><li>What is ACE-1 IT?</li><li>What are the services of ACE-1 IT?</li></o>`,
+            notes: "<u><li>You can add a file link or a website link by clicking on the Add File Link button</li><li>Ask questions about the any url on the table</li></u>",
             component: <ChatTriggeredAnswerSearch />,
             link: "ask-me-ai-agent"
         },
+        // {
+        //     name: "Pepa Medical Clinic",
+        //     description: "A medical clinic automation that can handle setting appointments.",
+        //     instruction: "A medical clinic automation that can handle setting appointments.",
+        //     notes: "<u><li>Click on the microphone image to start talking with ai</li></u>",
+        //     component: <PepaMedicalClinic />,
+        //     link: "pepa-medical-clinic"
+        // },
         {
             name: "Event AI Agent",
             description: "An AI agent that answers questions about an event. Questions such as: event time, location, guests, parking, food, etc.",
             instruction: "",
-            notes: `<u><li>Send message through this Bot Link: <a target="__blank" href="https://t.me/sssssssssssssun_bot">https://t.me/sssssssssssssun_bot</a></li><li>What is the event all about?</li><li>What is the event schedule?</li><li>Are there any giveaways?</li><li>Where can I park?</li></u>`,
+            notes: `<u><li>Send message through this Bot Link: <a href="https://t.me/sssssssssssssun_bot">https://t.me/sssssssssssssun_bot</a></li><li>What is the event all about?</li><li>What is the event schedule?</li><li>Are there any giveaways?</li><li>Where can I park?</li></u>`,
             component: <EventKnowledgeBasedAI />,
             link: "event-ai-agent"
         },
@@ -59,7 +59,14 @@ const page = ({params}) => {
             component: <Helpdesk />,
             link: "helpdesk"
         },
-        
+        {
+            name: "AI Voice Assistant",
+            description: "An interactive AI voice assistant that engages in conversation and provides information in real-time using the Vapi.ai platform.",
+            instruction: "",
+            notes: "<h4>How to use:</h4><u><li>Click the 'Start Call' button to begin speaking with the AI assistant</li><li>Speak clearly into your microphone</li><li>Click 'End Call' when you're finished</li></u>",
+            component: <VapiAssistant />,
+            link: "vapi-assistant"
+        },
     ]
     
     const [site, setSite] = useState('')
