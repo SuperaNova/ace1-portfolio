@@ -31,7 +31,7 @@ const ChatTriggeredAnswerSearch = () => {
             <div className="flex flex-between gap-6">
                 {/* <iframe width={800} height={500} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_NpGTkloO0IBIRb8nLsupovlzx5lHTT6fvbAi0qQjG38UjH-qztjpoAH2jDtXY47z_i_6qXcdLJn4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe> */}
                 <iframe width={800} height={500} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_NpGTkloO0IBIRb8nLsupovlzx5lHTT6fvbAi0qQjG38UjH-qztjpoAH2jDtXY47z_i_6qXcdLJn4/pubhtml?widget=true&amp;headers=false"></iframe>               
-                <iframe src="https://drive.google.com/embeddedfolderview?id=1vdVSIbPCIGYJ4tMFjLQovGNpgkBAMrtK#list"></iframe> 
+                {/* <iframe src="https://drive.google.com/embeddedfolderview?id=1vdVSIbPCIGYJ4tMFjLQovGNpgkBAMrtK#list"></iframe>  */}
                 <div id="n8n-chat_triggered_answer_search" className='w-full h-[500px] overflow-auto'></div> 
             </div>
 
